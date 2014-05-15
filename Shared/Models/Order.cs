@@ -20,6 +20,7 @@ namespace XamarinStore
 
 		public void Add (Product product)
 		{
+            if (product == null) throw new ArgumentNullException("product");
 			products.Insert (0,(Product)product.Clone());
 			var evt = ProductsChanged;
 			if (evt != null)
@@ -28,6 +29,7 @@ namespace XamarinStore
 
 		public bool Remove (Product product)
 		{
+            if (product == null) throw new ArgumentNullException("product");
 			var result = products.Remove (product);
 			if (result) {
 				var evt = ProductsChanged;
@@ -50,6 +52,7 @@ namespace XamarinStore
 
 		public string GetJson(User user)
 		{
+            if (user == null) throw new ArgumentNullException("user");
 			ShippingName = string.Format ("{0} {1}",user.FirstName, user.LastName);
 			SsoToken = user.Token;
 			Email = user.Email;

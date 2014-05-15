@@ -196,6 +196,7 @@ namespace XamarinStore
 			
 
 		public Task<OrderResult> PlaceOrder (User user, bool verify = false) {
+            if (user == null) throw new ArgumentNullException("user");
 			return Task.Factory.StartNew (() => {
 				try {
 					var content = Encoding.UTF8.GetBytes (CurrentOrder.GetJson (user));
