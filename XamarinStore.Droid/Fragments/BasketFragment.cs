@@ -26,6 +26,7 @@ namespace XamarinStore
 
 		public BasketFragment(Order order)
 		{
+            if (order == null) throw new ArgumentNullException("order");
 			_order = order;
 		}
 

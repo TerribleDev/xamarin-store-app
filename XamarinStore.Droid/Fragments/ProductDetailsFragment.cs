@@ -39,6 +39,7 @@ namespace XamarinStore
 
 		public ProductDetailsFragment (Product product,int slidingDelta )
 		{
+            if (product == null) throw new ArgumentNullException("product");
 			this.slidingDelta = slidingDelta;
 			currentProduct = product;
 			images = product.ImageUrls.ToArray().Shuffle() ?? new string[0];
