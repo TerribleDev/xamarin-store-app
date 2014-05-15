@@ -1,0 +1,20 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    albacore (0.3.6)
+      rubyzip (< 1.0.0)
+    mini_portile (0.6.0)
+    nokogiri (1.6.2.1-x86-mingw32)
+      mini_portile (= 0.6.0)
+    os (0.9.6)
+    rake (10.3.1)
+    rubyzip (0.9.9)
+
+PLATFORMS
+  x86-mingw32
+
+DEPENDENCIES
+  albacore
+  nokogiri
+  os
+  rake

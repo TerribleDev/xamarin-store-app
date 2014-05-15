@@ -12,6 +12,14 @@ If you have any questions, give Xamarin a call at +1 (855) 926-2746 or email [he
 
 This mobile app is brought to you by your friends at [Xamarin](http://www.xamarin.com/) on an evening hack night.
 
+## Rake
+
+This application can be built by installing ruby and ruby gems then running the following in the root of the solution directory:
+
+*gem install bundle
+*bundle
+*rake preflight
+
 ### Authors:
 - David Siegel <david@xamarin.com>
 - Vinicius Depizzol <vinicius.depizzol@xamarin.com>
@@ -26,3 +34,7 @@ This mobile app is brought to you by your friends at [Xamarin](http://www.xamari
 - Zack Gramana <zack@xamarin.com>
 - Valentin Polushkin <valentin.polushkin@xamarin.com>
 - Jérémie Laval <jeremie.laval@xamarin.com>
+
+
+
+
